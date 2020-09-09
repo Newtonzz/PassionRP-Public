@@ -10,7 +10,17 @@ CopyCoords is a simple FiveM resource that allows you to show player's coords on
 
 ## Usage
 
-`/CopyCoords` to copy the coords to your clipboard in the format: 0.0, 0.0, 0.0, 0.0
-`/CopyCoords2` to copy your coords to your clipboard in the format: x = 0.0, y = 0.0, z = 0.0, h = 0.0
-`/CopyCoords3` to copy your coords to your clipboard in the format: ['x'] = 0.0, ['y'] = 0.0, ['z'] = 0.0, ['h'] = 0.0
-`/ShowCoords` to show the coords on the screen.
+> /CopyCoords to copy the coords to your clipboard in the format: 
+
+`0.0, 0.0, 0.0, 0.0`
+
+> /CopyCoords2 to copy your coords to your clipboard in the format: 
+
+`x = 0.0, y = 0.0, z = 0.0, h = 0.0`
+
+> /CopyCoords3 to copy your coords to your clipboard in the format: 
+
+`['x'] = 0.0, ['y'] = 0.0, ['z'] = 0.0, ['h'] = 0.0`
+
+> /ShowCoords to show the coords on the screen.
+
