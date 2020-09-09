@@ -6,7 +6,7 @@ CopyCoords is a simple FiveM resource that allows you to show player's coords on
 
 [clipboard](https://github.com/throwarray/clipboard)
 
-
+clipboard must be started before this resource!
 
 ## Usage
 
