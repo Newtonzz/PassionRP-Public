@@ -24,3 +24,7 @@ clipboard must be started before this resource!
 
 > /ShowCoords to show the coords on the screen.
 
+
+[PassionRP](https://passionrp.com/) Public repository for the FiveM community.
+
+Disclaimer: We provide no resource support.
