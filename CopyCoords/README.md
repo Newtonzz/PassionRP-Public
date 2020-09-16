@@ -1,6 +1,6 @@
 # CopyCoords
 
-CopyCoords is a simple FiveM resource that allows you to show player's coords on your screen and copy them to your clipboard, this saves time for developers. This resource was built for rapid development for [PassionRP](https://passionrp.com/).
+CopyCoords is a simple FiveM resource that allows you to show player's coords on your screen and copy them to your clipboard, this saves time for developers. This resource was built for rapid development for [PassionRP](https://passionrp.com/). [Discord](https://discord.gg/passionrp/)
 
 ## Dependencies 
 
