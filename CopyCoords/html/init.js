@@ -1,16 +1,14 @@
-$(document).ready(function(){
-  window.addEventListener('message', function(event) {
-      var node = document.createElement('textarea');
-      var selection = document.getSelection();
+window.addEventListener('message', function(e){
+  let node = document.createElement('textarea');
+  let sel = document.getSelection();
+  
+  node.textContent = e.data.coords;
+  document.body.appendChild(node);
 
-      node.textContent = event.data.coords;
-      document.body.appendChild(node);
+  sel.removeAllRanges();
+  node.select();
+  document.execCommand('copy');
 
-      selection.removeAllRanges();
-      node.select();
-      document.execCommand('copy');
-
-      selection.removeAllRanges();
-      document.body.removeChild(node);
-  });
+  sel.removeAllRanges();
+  document.body.removeChild(node);
 });
