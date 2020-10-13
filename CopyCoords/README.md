@@ -1,5 +1,5 @@
 # PassionRP Community
-[Discord Invite Link](https://discord.gg/passionrp)  Join us today !
+[PassionRP Discord Invite Link](https://discord.gg/passionrp)  Join us today !
 
 # CopyCoords Resource
 
