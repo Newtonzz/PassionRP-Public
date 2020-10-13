@@ -2,6 +2,9 @@
 
 CopyCoords is a simple FiveM resource that allows you to display the co-ordinates of your player, or copy them to your clipboard in a variety of ways. This is a very useful resource designed to save time when developing new FiveM Resources.
 
+# PassionRP Community
+[Discord Invite Link](https://discord.gg/passionrp) 
+
 ## Usage
 
 | Command | Arguments | Description |
