@@ -1,0 +1,733 @@
+
+* {
+    user-select: none; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: none;
+}
+
+.watch {
+    position: absolute;
+    height: 35vh;
+    right: 15vh;
+    bottom: 10vh;
+}
+
+.step-circle {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    top: 19.5px;
+    margin: auto;
+}
+
+.step-circle:before {
+    border-radius: 50%;
+    border-top: 4px solid #0099FF;
+    content: " ";
+    display: block;
+    position:absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    animation: rotation 2.5s linear infinite;
+}
+  
+.step-circle:after {
+    border-radius: 50%;
+    border-bottom: 4px solid #0099FF;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    animation: rotation-reverse 2.5s linear infinite;
+    position:absolute;
+    top: 0;
+}
+
+.circle-text {
+    position: relative;
+    margin: auto;
+    color: white;
+    font-size: 15px;
+    top: 30px;
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.watch-screen {
+    position: absolute;
+    right: 18.5vh;
+    bottom: 20vh;
+    height: 16.5vh;
+    width: 14.5vh;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 2vh;
+}
+
+.main-screen {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.fa-utensils {
+    float: left;
+}
+
+.fa-tint {
+    float: left;
+}
+
+.fa-compass {
+    float: left;
+}
+
+.fa-toggle-on {
+    float: left;
+}
+
+#niggerfaggot {
+    position: absolute;
+    left: 40px;
+    bottom: 17px;
+    color: white;
+}
+.hunger-progress {
+    position: absolute; 
+    left: 25px;
+    bottom: 65px !important;
+    width: 50px !important;
+    height: 50px !important;
+    text-align: center;
+}
+.circle-progress1 {
+    position: absolute; 
+    width: 100% !important;
+    height: 100% !important;
+}
+.circle-progress-value1 {
+	stroke-width: 10px;
+	stroke: #e49b4e;
+	stroke-dasharray: 20 1;
+}
+.circle-progress-circle1 {
+	stroke-width: 6px;
+    stroke: black;
+}
+
+#faggotnigger {
+    position: absolute;
+    left: 40px;
+    bottom: 17px;
+    color: white;
+}
+.thirst-progress {
+    position: absolute; 
+    left: 25px;
+    bottom: 65px !important;
+    width: 50px !important;
+    height: 50px !important;
+    text-align: center;
+}
+.circle-progress2 {
+    position: absolute; 
+    width: 100% !important;
+    height: 100% !important;
+}
+.circle-progress-value2 {
+	stroke-width: 10px;
+	stroke: #466dc1;
+	stroke-dasharray: 20 1;
+}
+.circle-progress-circle2 {
+	stroke-width: 6px;
+    stroke: black;
+}
+
+#figgernaggot {
+    position: absolute;
+    left: 39px;
+    bottom: 17px;
+    color: white;
+}
+.stress-progress {
+    position: absolute; 
+    left: 32px;
+    bottom: 65px !important;
+    width: 50px !important;
+    height: 50px !important;
+    text-align: center;
+}
+.circle-progress3 {
+    position: absolute; 
+    width: 100% !important;
+    height: 100% !important;
+}
+.circle-progress-value3 {
+	stroke-width: 10px;
+	stroke: red;
+	stroke-dasharray: 20 1;
+}
+.circle-progress-circle3 {
+	stroke-width: 6px;
+    stroke: black;
+}
+
+
+.fitbit-settings-title {
+    display: inline-block;
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.food-settings-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.thirst-settings-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.compass-settings-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.togglehud-settings-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.toggleHungerThirst-settings-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.step-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.hunger-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.thirst-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.stress-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.timer-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.settings-app {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 1px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+::-webkit-scrollbar-thumb:active {
+  background: white;
+}
+::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.app-titel {
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    top: 1.5vh;
+    font-size: 1.3vh;
+}
+
+.app-buttons {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    bottom: 1vh;
+    width: 100%;
+}
+
+.settings-app-buttons {
+    position: absolute;
+    float: left;
+    
+    margin: 0 auto;
+    left: 0;
+    bottom: 0.75vh;
+    width: 100%;
+
+
+    z-index: 200;   
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.settings-scrollbar-apps {
+    height: 92%;
+    width: 95%;
+    top: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* position: relative;
+float: left;
+width: 3.5vh;
+height: 3.5vh;
+top: 0.5vh;
+left: 1.2vh;
+border-radius: 0.4vh;
+margin-right: 0.8vh;
+margin-top: 0.8vh;
+background: rgba(158, 158, 158, 0.096);
+transition: all 0.1s linear;
+text-align: center; */
+
+.settings-app-back-button {   
+    position: relative;
+    float: left;
+    background-color: rgba(179, 172, 172, 0.3) !important;
+   
+
+    /*background-color: rgba(32, 32, 32, 0.685);*/
+    width: 85% !important;
+    height: 20% !important;
+    border-radius: 1vh !important;
+    margin: 0 auto  !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: 1vh !important;
+}
+
+
+.settings-app-back-button:hover {
+    background-color: rgba(170, 170, 170, 1) !important;
+}
+
+.settings-app-back-button > p {
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8vh;
+}
+
+.app-button {   
+    position: relative;
+    float: left;
+    background-color: rgba(32, 32, 32, 0.685);
+    width: 40%;
+    border-radius: 1vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-left: 1vh;
+    transition: all 0.1s linear;
+}
+
+.app-button:hover {
+    background-color: rgba(56, 56, 56, 0.877);
+}
+
+.app-button > p {
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8vh;
+}
+
+.food-alert-setting {
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 4vh;
+}
+
+.input-precentage {
+    background: none;
+    position: absolute;
+    left: 0;
+    width: 30%;
+    top: 9vh;
+    margin: 0 auto;
+    right: 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    color: white;
+}
+
+input[type="number"] {
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2vh;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+.food-alert-setting > p {
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9vh;
+}
+
+.fitbit-app {
+    position: relative;
+    float: left;
+    width: 3.5vh;
+    height: 3.5vh;
+    top: 0.5vh;
+    left: 1.2vh;
+    border-radius: 0.4vh;
+    margin-right: 0.8vh;
+    margin-top: 0.8vh;
+    background: rgba(158, 158, 158, 0.096);
+    transition: all 0.1s linear;
+    text-align: center;
+}
+
+.fitbit-app:hover {
+    background: rgba(158, 158, 158, 0.219);
+}
+
+.fitbit-app > i {
+    padding-top: 1vh;
+    font-size: 1.8vh;
+}
+
+
+.fitbit-settings-app {
+    position: relative;
+    float: left;
+    width: 12.0vh;
+    height: 2.5vh;
+    top: 0.5vh;
+    left: 1.2vh;
+    border-radius: 0.4vh;
+    margin-right: 0.8vh;
+    margin-top: 0.8vh;
+    background: rgba(158, 158, 158, 0.096);
+    transition: all 0.1s linear;
+    text-align: center;
+}
+
+.fitbit-settings-app:hover {
+    background: rgba(158, 158, 158, 0.219);
+}
+
+.fitbit-settings-app > i {
+    padding-left: 10px;
+    padding-top: 0.35vh;
+    font-size: 1.8vh;
+}
+
+
+
+@keyframes rotation {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+@keyframes rotation-reverse {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(-360deg);
+}
+}
+  
+  
+
+
+
+
+
+
+
+@keyframes flash {
+    from {border-color: #cc3300;}
+    to {border-color: transparent;}
+}
+
+.alarm {
+  animation: flash 0.15s linear 0s 3;
+}
+
+h1 {
+  margin-top: 50px;
+  font-family: 'Satisfy', cursive;
+  font-size: 5em;
+}
+
+#config {
+  margin-top: 40px;
+}
+
+#break-div {
+  display:  block
+}
+
+.center-block {
+    top: 50%;
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.min-control {
+    width: 150px;
+    height: 150px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  font-size:  2.2em;
+  color:#e6e6e6;
+  width: 5%;
+  top: 5%;
+}
+
+.sign {  
+position: relative;
+  display: block;
+  font-size: 1.8em;
+  width: 5%;
+  top: 5%;
+}
+
+.sign-b {
+  position: relative;
+  display: block;
+  font-size: 1.8em;
+  width: 5%;
+  top: 5%;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#e6e6e6;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+  color:#e6e6e6;
+}
+
+#timer {
+  padding: 0;
+  margin: 25px auto;
+  height: 30px;
+  max-width: 300px;
+  max-height: 300px;
+  border-style: solid;
+  border-radius: 100%;
+  border-width: 1px;
+  border-color:  #ff80bf;
+  cursor: pointer;
+}
+
+#state{
+  margin:0;
+  position: relative;
+  top: 40%;
+  transform: translateY(-30%);
+  font-size: 13px;
+}
+
+#time{
+  margin:0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-70%);
+  font-size:  4em;
+}
+
+
+/* checkbox */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

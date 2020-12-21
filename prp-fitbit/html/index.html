@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>FLX Fitbit</title>
+</head>
+    <body>
+        <div class="container">
+            <img src="./watch.png" alt="watch" class="watch">
+
+            <div class="watch-screen">
+                <div class="main-screen">
+                    <div class="fitbit-app" data-app=".hunger-app"><i class="fas fa-drumstick-bite" style="color: #dbd4d4;"></i></div>
+                    <div class="fitbit-app" data-app=".thirst-app"><i class="fas fa-glass-whiskey" style="color: #dbd4d4;"></i></div>
+                    <div class="fitbit-app" data-app=".stress-app"><i class="fas fa-brain" style="color: #dbd4d4;"></i></div>
+                    <div class="fitbit-app" data-app=".step-app"><i class="fas fa-walking" style="color: #dbd4d4;"></i></div>
+<!--                    <div class="fitbit-app" data-app=".timer-app"><i class="fas fa-walking" style="color: #dbd4d4;"></i></div>-->
+                    <div class="fitbit-app" data-app=".settings-app"><i class="fa fa-cog" style="color: #d3d3d3;"></i></div>
+                </div>
+
+               
+
+
+
+                <div class="hunger-app">
+                    <span class="app-titel">Calories</span>
+                        <div class="hunger-progress">
+                            <i class="fas fa-drumstick-bite fa-lg" id="niggerfaggot"></i>
+                        </div>
+                    <div class="app-buttons">
+                        <div class="app-button back"><p>Back</p></div>
+                    </div>
+                </div>
+
+                <div class="thirst-app">
+                    <span class="app-titel">Hydration</span>
+                    <div class="thirst-progress">
+                        <i class="fas fa-glass-whiskey fa-lg" id="faggotnigger"></i>
+                    </div>
+                    <div class="app-buttons">
+                        <div class="app-button back"><p>Back</p></div>
+                    </div>
+                </div>
+
+                <div class="stress-app">
+                    <span class="app-titel">Stress levels</span>
+                    <div class="stress-progress">
+                        <i class="fas fa-brain fa-lg" id="figgernaggot"></i>
+                    </div>
+                    <div class="app-buttons">
+                        <div class="app-button back"><p>Back</p></div>
+                    </div>
+                </div>
+
+                <div class="step-app">
+                    <span class="app-titel">Steps</span>
+                    <div class="step-circle">
+                        <div class="circle-text">
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="app-buttons">
+                        <div class="app-button reset-steps"><p>Reset</p></div>
+                        <div class="app-button back"><p>Back</p></div>
+                    </div>
+                </div>
+                <!-- WIP TIMER APP only css and audio needs finishing-->
+                
+<!--                <div class="timer-app">-->
+<!--                    <span class="app-titel">Timer</span>-->
+<!--                    <div class="app-buttons">-->
+
+<!--                        <div class="center-block" id="min-div">-->
+<!--                            <div class="min-control">-->
+<!--                                <z id="min-less" class="control sign">-</z>-->
+<!--                                <y id="min-tag" class="control">5</y>-->
+<!--                                <z id="min-plus" class="control sign-b">+</z>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="text-center center-block" id="timer">-->
+<!--                            <p id="state">Begin</p>-->
+<!--                            <p id="time"></p>-->
+<!--                        </div>-->
+
+<!--                        <div class="app-button back"><p>Back</p></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+                <div class="settings-app">
+                    <div class="settings-scrollbar-apps">
+                        <div class="fitbit-settings-app" data-app=".food-settings-app"><i class="fa fa-utensils" style="color: #dbd4d4;"></i><p class="fitbit-settings-title">Hunger</p></div>
+                        <div class="fitbit-settings-app" data-app=".thirst-settings-app"><i class="fa fa-tint" style="color: #dbd4d4;"></i><p class="fitbit-settings-title">Thirst</p></div>
+                        <div class="fitbit-settings-app" data-app=".compass-settings-app"><i class="fa fa-compass" style="color: #dbd4d4;"></i><p class="fitbit-settings-title">Compass</p></div>
+                        <div class="fitbit-settings-app" data-app=".togglehud-settings-app"><i class="fa fa-toggle-on" style="color: #dbd4d4;"></i><p class="fitbit-settings-title">Hud</p></div>
+                        <div class="fitbit-settings-app" data-app=".toggleHungerThirst-settings-app"><i class="fa fa-toggle-on" style="color: #dbd4d4;"></i><p class="fitbit-settings-title">Hunger Thirst Hud</p></div>
+                    </div>
+                    <div class="settings-app-buttons">
+                        <div class="app-button settings-app-back-button"><p></div>
+                    </div>
+                </div>
+
+                    <!-- SETTINGS APPS-->
+
+                <div class="food-settings-app">
+                    <span class="app-titel">Nutrition</span>
+                    <div class="food-alert-setting">
+                        <p>At what % do you want an alert?</p>
+                    </div>
+                    <input type="number" class="input-precentage" id="food-input" placeholder="50%" min="1" max="100">
+                    <div class="app-buttons">
+                        <div class="app-button save-food-settings"><p>Save</p></div>
+                        <div class="app-button back-settings"><p>Back</p></div>
+                    </div>
+                </div>
+
+                <div class="thirst-settings-app">
+                    <span class="app-titel">Thirst</span>
+                    <div class="food-alert-setting">
+                        <p>At what % do you want an alert?</p>
+                    </div>
+                    <input type="number" class="input-precentage" id="thirst-input" placeholder="50%" min="1" max="100">
+                    <div class="app-buttons">
+                        <div class="app-button save-thirst-settings"><p>Save</p></div>
+                        <div class="app-button back-settings"><p>Back</p></div>
+                    </div>
+                </div>
+
+                <div class="compass-settings-app">
+                    <span class="app-titel">Compass</span>
+                    <div class="food-alert-setting">
+                        <p>Toggle compass</p>
+                    </div>
+                    <div class="app-buttons">
+                        <label class="switch">
+                            <input type="checkbox" id="compassCheckBox" onclick="compassToggle()">
+                            <span class="slider round"></span>
+                        </label>
+                        <div class="app-button back-settings"><p>Back</p></div>
+                    </div>
+                </div>
+
+                <div class="togglehud-settings-app">
+                    <span class="app-titel">Toggle Hud</span>
+                    <div class="food-alert-setting">
+                        <p>Toggle Hud</p>
+                    </div>
+                    <div class="app-buttons">
+                        <label class="switch">
+                            <input type="checkbox" id="togglehudCheckBox" onclick="togglehudToggle()">
+                            <span class="slider round"></span>
+                        </label>
+                        <div class="app-button back-settings"><p>Back</p></div>
+                    </div>
+                </div>
+
+                <div class="toggleHungerThirst-settings-app">
+                    <span class="app-titel">Toggle Hunger Thirst Hud</span>
+                    <div class="food-alert-setting">
+                        <p>Toggle Hunger Thirst Hud</p>
+                    </div>
+                    <div class="app-buttons">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleHungerThirstCheckBox" onclick="toggleHungerThirstToggle()">
+                            <span class="slider round"></span>
+                        </label>
+                        <div class="app-button back-settings">
+                            <p>Back</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./loading-bar.js"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
