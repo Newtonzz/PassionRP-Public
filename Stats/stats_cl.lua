@@ -40,6 +40,8 @@ Citizen.CreateThread(function()
         else
             JobOnDuty = "false"
         end
+
+        TriggerServerEvent("stats:setmeta")
         TriggerServerEvent("stats:upload", Name, FirstLast, Citizenid, Total, JobName, JobLabel, JobOnDuty)
         Citizen.Wait(5000)
 
